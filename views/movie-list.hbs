@@ -1,0 +1,14 @@
+<h1>Movies</h1>
+<div class="container">
+	{{#each movies}}
+		<div
+			class="card-container"
+			style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),url({{image}})"
+		>
+			<p class="title">{{title}}</p>
+			<p class="year">{{released}}</p>
+			<p class="description">{{description}}</p>
+			<a href="/movies/{{id}}">Mer info</a>
+		</div>
+	{{/each}}
+</div>
